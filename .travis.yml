@@ -10,4 +10,4 @@ service:
 
 script:
   - docker run -e CI=tru dkapanadze/docker-react npm run test
- 
+ git
