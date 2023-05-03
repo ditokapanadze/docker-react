@@ -1,8 +1,13 @@
 sudo: required
-service:
-  - docker
-before_install:
-  - docker build -t dkapanadze/docker-react -f Dockerfile.dev .
+# service:
+#   - docker
+# before_install:
+#   - docker build -t dkapanadze/docker-react -f Dockerfile.dev .
+# script:
+#   - docker run -e CI=tru dkapanadze/docker-react npm run test
+#  git
+
+
+language: node_js
 script:
   - docker run -e CI=tru dkapanadze/docker-react npm run test
- git
