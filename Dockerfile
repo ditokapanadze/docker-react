@@ -7,6 +7,6 @@ COPY . .
 RUN npm run build
 
 FROM nginx
-
+# EXPOSE 80 მე არ დამჭირდა, ტუტორიალში იყო
 COPY --from=builder /app/build /usr/share/nginx/html
 
